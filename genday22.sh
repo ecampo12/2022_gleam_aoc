@@ -51,9 +51,9 @@ pub fn part2(input: String) -> Int {
 pub fn main() {
   let assert Ok(input) = read(\"input.txt\")
   let part1_ans = part1(input)
-  printf("Part 1: ~b~n", part1_ans)
+  printf(\"Part 1: ~b~n\", part1_ans)
   let part2_ans = part2(input)
-  printf("Part 2: ~b~n", part2_ans)
+  printf(\"Part 2: ~b~n\", part2_ans)
 }" > src/${project}.gleam
 gleam add simplifile # used to read files
 gleam add gleam_regexp@1 #regex

@@ -7,3 +7,4 @@ input.txt
 *.ez
 build
 erl_crash.dump
+/day16

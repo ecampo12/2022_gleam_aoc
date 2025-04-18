@@ -37,7 +37,7 @@ curl -s "https://adventofcode.com/${year}/day/${day}/input" --cookie "session=${
 # Remove the trailing blank line
 truncate -s -1 input.txt
 
-echo -n "import gleam/io
+echo -n "import gleam/format.{printf}
 import simplifile.{read}
 
 pub fn part1(input: String) -> Int {
@@ -51,14 +51,13 @@ pub fn part2(input: String) -> Int {
 pub fn main() {
   let assert Ok(input) = read(\"input.txt\")
   let part1_ans = part1(input)
-  io.print(\"Part 1: \")
-  io.debug(part1_ans)
+  printf("Part 1: ~b~n", part1_ans)
   let part2_ans = part2(input)
-  io.print(\"Part 2: \")
-  io.debug(part2_ans)
+  printf("Part 2: ~b~n", part2_ans)
 }" > src/${project}.gleam
 gleam add simplifile # used to read files
 gleam add gleam_regexp@1 #regex
+gleam add format@1
 
 echo -n "import ${project}.{part1, part2}
 import gleeunit

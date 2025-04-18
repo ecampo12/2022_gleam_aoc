@@ -1,6 +1,6 @@
 import gleam/deque.{type Deque}
+import gleam/format.{printf}
 import gleam/int
-import gleam/io
 import gleam/list
 import gleam/result
 import gleam/set.{type Set}
@@ -118,9 +118,7 @@ pub fn part2(input: String) -> Int {
 pub fn main() {
   let assert Ok(input) = read("input.txt")
   let part1_ans = part1(input)
-  io.print("Part 1: ")
-  echo part1_ans
+  printf("Part 1: ~b~n", part1_ans)
   let part2_ans = part2(input)
-  io.print("Part 2: ")
-  echo part2_ans
+  printf("Part 2: ~b~n", part2_ans)
 }

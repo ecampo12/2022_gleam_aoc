@@ -3,6 +3,7 @@
 
 packages = [
   { name = "filepath", version = "1.1.2", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "filepath", source = "hex", outer_checksum = "B06A9AF0BF10E51401D64B98E4B627F1D2E48C154967DA7AF4D0914780A6D40A" },
+  { name = "format", version = "1.0.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "format", source = "hex", outer_checksum = "7654EE35E01394BF558F364542F163941A66CBA1512AA7D53F2A794BBD90BD9D" },
   { name = "gleam_deque", version = "1.0.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleam_deque", source = "hex", outer_checksum = "64D77068931338CF0D0CB5D37522C3E3CCA7CB7D6C5BACB41648B519CC0133C7" },
   { name = "gleam_regexp", version = "1.1.1", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleam_regexp", source = "hex", outer_checksum = "9C215C6CA84A5B35BB934A9B61A9A306EC743153BE2B0425A0D032E477B062A9" },
   { name = "gleam_stdlib", version = "0.59.0", build_tools = ["gleam"], requirements = [], otp_app = "gleam_stdlib", source = "hex", outer_checksum = "F8FEE9B35797301994B81AF75508CF87C328FE1585558B0FFD188DC2B32EAA95" },
@@ -11,6 +12,7 @@ packages = [
 ]
 
 [requirements]
+format = { version = ">= 1.0.0 and < 2.0.0" }
 gleam_deque = { version = ">= 1.0.0 and < 2.0.0" }
 gleam_regexp = { version = ">= 1.1.1 and < 2.0.0" }
 gleam_stdlib = { version = ">= 0.44.0 and < 2.0.0" }
